@@ -1,0 +1,41 @@
+1ans)
+for i in *linux*; do rm $i; done
+2nd ans)
+The touch command can be used to create a text file without opening it. The touch command will create an empty file. The syntax is as follows:
+ touch <filename>
+Suppose you want to create a file named sample.txt, then the command would be:
+ touch sample.txt
+3rd ans)
+There are two commands that can be used to delete a directory in Linux.
+rmdir
+rmdir <directory name>
+rm -rf 
+ rm -rf <directory name>
+Note: The command rm -rf should be used carefully because it will delete all the data without any warnings.
+4th ans)
+There are two commands to schedule tasks in Linux: cron and at.
+The cron command is used to repeatedly schedule a task at a specific time. The tasks are stored in a cron file and then executed using the cron command. The cron command reads the string from this file and schedules the task. The syntax for the string to enter in the cron file is as follows:
+<minute> <hour> <day> <month> <weekday> <command>
+Suppose you want to run a command at 4 pm every Sunday, then the string would be:
+0 16 * * 0 <command>
+The at command is used to schedule a task only once at the specified time.
+Suppose you want to shut down the system at 6 pm today, then the command for this would be:
+$ echo "shutdown now" | at -m 18:00.
+5th ans)
+The path specified to the file or the file name mentioned might be wrong
+The user trying to delete the file might not have permissions to delete the file.
+6th ans)
+The .z extension means that the file has been compressed. To look at the contents of the compressed file, you can use the zcat command.
+Example:
+$ zcat sample.z
+7th ans)
+Open the terminal and run:
+$ echo $SHELL
+This will print the name of the Shell being used
+8th ans)
+SSH can be used for this. The Syntax is as follows:
+ssh <username>@<ip address>
+Suppose you want to login into a system with IP address 192.168.5.5 as a user “mike”, then the command would be:
+$ ssh mike@192.168.5.5
+9th ans)
+vim -R <filename>
